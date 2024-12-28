@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/popup"
+    tools:context=".activities.MenuActivity">
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_32"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/tint_button_item"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="reset"
+        android:padding="0dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/checkboxesLayout"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Menu"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="№\nзапроса"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Список"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Лог"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Файл"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:gravity="center"
+                android:textSize="32sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />
+            <CheckBox
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple" />>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="apply"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

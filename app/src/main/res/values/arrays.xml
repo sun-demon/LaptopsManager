@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="columns">
+        <item>id</item>
+        <item>OS</item>
+        <item>mass</item>
+        <item>3G</item>
+        <item>inches</item>
+        <item>RAM</item>
+        <item>battery</item>
+    </string-array>
+
+    <string-array name="orders">
+        <item>ASC</item>
+        <item>DESC</item>
+    </string-array>
+
+    <string-array name="no_group">
+        <item>no</item>
+        <item>group</item>
+    </string-array>
+
+    <string-array name="group_average">
+        <item>group</item>
+        <item>average</item>
+    </string-array>
+
+    <string-array name="numbered_columns">
+        <item>id</item>
+        <item>mass</item>
+        <item>3G</item>
+        <item>inches</item>
+        <item>RAM</item>
+        <item>battery</item>
+    </string-array>
+
+</resources>
