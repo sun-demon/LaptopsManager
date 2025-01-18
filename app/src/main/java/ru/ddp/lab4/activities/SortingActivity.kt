@@ -51,7 +51,7 @@ ${CASTLED_ALL.replaceIndent("    ")}
 FROM 
     $TABLE_NAME 
 ORDER BY 
-    $columnName 
+    laptops.$columnName 
     $orderName
         """.trimIndent()
         intent.putExtra("query", query)
